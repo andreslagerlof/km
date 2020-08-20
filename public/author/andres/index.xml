@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrés | FFF KM</title>
+    <link>/author/andres/</link>
+      <atom:link href="/author/andres/index.xml" rel="self" type="application/rss+xml" />
+    <description>Andrés</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Andrés</title>
+      <link>/author/andres/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>/stats/statistik/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/stats/statistik/</guid>
+      <description>
+
+
+&lt;div id=&#34;resultat-från-2006-till-2019&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Resultat från 2006 till 2019&lt;/h2&gt;
+&lt;p&gt;För den nostaligiske har jag lagt upp den här listan över placeringar 1-3 i tidigare års KM-tävlingar.&lt;/p&gt;
+&lt;p&gt;Jag har byggt vidare på de uppgifter som jag fått från Jan Tivenius som var tävlingsledare fram till och med 2018, då jag tog över.&lt;/p&gt;
+&lt;p&gt;Tack för hjälpen Janne!&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

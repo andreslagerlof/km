@@ -9,6 +9,12 @@
 #  weight = 10
 
 [[main]]
+  name = "Regler & system"
+  url = "#rules"
+  weight = 10
+
+
+[[main]]
   name = "Posts"
   url = "#posts"
   weight = 20
@@ -19,14 +25,14 @@
 #  weight = 30
 
 [[main]]
-#  name = "Publications"
-#  url = "#featured"
-#  weight = 40
+  name = "Statistik"
+  url = "stats/"
+  weight = 40
 
 [[main]]
-#  name = "Courses"
-#  url = "courses/"
-#  weight = 50
+  name = "Om sajten"
+  url = "om/"
+  weight = 50
 
 [[main]]
   name = "Contact"

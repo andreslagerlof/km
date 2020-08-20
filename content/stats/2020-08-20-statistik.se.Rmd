@@ -1,0 +1,26 @@
+---
+pagetitle: "Statistik"
+author: Andrés
+date: '2020-08-20'
+slug: statistik
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: [admin]
+lastmod: '2020-08-20T21:33:57+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+## Resultat från 2006 till 2019  
+
+För den nostaligiske har jag lagt upp en lista över placeringar 1-3 i tidigare års KM-tävlingar. Jag har byggt vidare på de uppgifter som jag fått från Jan Tivenius som var tävlingsledare fram till och med 2018, varefter jag tog över.  
+
+*Tack för hjälpen Janne!*  
+
+
