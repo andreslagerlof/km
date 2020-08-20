@@ -1,0 +1,5 @@
+library(tidyverse)
+library(here)
+data <- read.csv2(here("assets", "data", "Pointsystem.csv"))
+data_df <- as.tibble(data)
+write_csv(data, path = "new_pointsystem.csv")
