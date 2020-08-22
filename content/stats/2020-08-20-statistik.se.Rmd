@@ -3,6 +3,7 @@ title: "Resultat från 2006 till 2019"
 pagetitle: "Statistik"
 author: Andrés
 date: '2020-08-20'
+weight: 10  # Order that this section will appear.
 slug: statistik
 categories: []
 tags: []
@@ -31,6 +32,7 @@ library(readr)
 library(readxl)
 library(DT)
 library(kableExtra)
+library(gt)
 library(ggplot2)
 library(here)
 ```
@@ -53,26 +55,48 @@ long_hist$result <- factor(long_hist$place, ordered = TRUE,
                       levels = c("1:a", "2:a", "3:a"))
 
 # Create dataframe with name, place and count of place
-stat2 <- long_hist %>% group_by(name) %>% count(name, place, sort = TRUE)
+stat2 <- long_hist %>% 
+  group_by(name) %>% 
+  count(name, place, sort = TRUE)
 # View(stat2)
 
+# Separate name variable in stat2 df
+stat2 <- stat2 %>% 
+  separate(name, into = c("firstname", "lastname"))
+
 ```
 
 
 
-```{r full_table, echo=TRUE}
-# Create a nice, responsive table with loads of handy features
-full_table <- datatable(
-  result_hist,
-  caption = "Lista över resultat 2006 till 2019",
-  extensions = 'Buttons', 
-  options = list(
-    dom = 'Bfrtip',
-    buttons = c( 'csv', 'excel', 'pdf', 'print')
-    )
+```{r full_table, echo=FALSE}
+
+gt(data = result_hist) %>% 
+  tab_header(
+    title = "Placeringar 1 till 3 i KM",
+    subtitle = "Åren 2006 till 2019"
+    ) %>% 
+  cols_label(
+    Year = "År"
+  ) %>% 
+    cols_align(
+    align = "left",
+    columns = vars(Year)
+  ) %>% 
+  tab_spanner(
+    label = "Placering",
+    columns = vars(
+      "1:a", "2:a", "3:a")
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Källa: Jan Tivenius, Andrés Gomez.*")
   )
 
-full_table
 ```
 
-En tabell kan vara lite svår att smälta, för att dyrka upp innehållet har jag därför gjort lite cool analys av historiken. På så vis kan man exempelvis se många segrar eller andra placeringar dom olika fäktarna har lyckats med.
+En tabell kan vara lite svår att smälta. För att dyrka upp innehållet har jag därför gjort lite cool analys av historiken så att ni kan se många segrar eller andra placeringar dom olika fäktarna har lyckats med.
+
+### Antal pallplatser per fäktare  
+
+Vi börjar analysen med att kolla på vilka fäktare som har placerat sig bland de 3 bästa och hur ofta det skett.
+
+
