@@ -1,4 +1,5 @@
 ---
+title: "Resultat från 2006 till 2019"
 pagetitle: "Statistik"
 author: Andrés
 date: '2020-08-20'
@@ -17,10 +18,61 @@ image:
 projects: []
 ---
 
-## Resultat från 2006 till 2019  
+## Resultattabell för perioden från 2006 till 2019  
 
 För den nostaligiske har jag lagt upp en lista över placeringar 1-3 i tidigare års KM-tävlingar. Jag har byggt vidare på de uppgifter som jag fått från Jan Tivenius som var tävlingsledare fram till och med 2018, varefter jag tog över.  
 
 *Tack för hjälpen Janne!*  
 
+```{r load_libraries, include=FALSE}
+# Load libraries
+library(tidyverse)
+library(readr)
+library(readxl)
+library(DT)
+library(kableExtra)
+library(ggplot2)
+library(here)
+```
 
+
+```{r prepare_data, include=FALSE}
+# Load dataset
+result_hist <- read_excel(here("assets", "data", "KM_tabeller.xlsx"))
+
+## Prepare the data
+
+# Create a long dataset
+long_hist <- result_hist %>% 
+  pivot_longer(c("1:a", "2:a", "3:a"), 
+                     names_to = "place", values_to = "name")
+# View(long_hist)
+
+# Add new categorical variable result based on variable
+long_hist$result <- factor(long_hist$place, ordered = TRUE,
+                      levels = c("1:a", "2:a", "3:a"))
+
+# Create dataframe with name, place and count of place
+stat2 <- long_hist %>% group_by(name) %>% count(name, place, sort = TRUE)
+# View(stat2)
+
+```
+
+
+
+```{r full_table, echo=TRUE}
+# Create a nice, responsive table with loads of handy features
+full_table <- datatable(
+  result_hist,
+  caption = "Lista över resultat 2006 till 2019",
+  extensions = 'Buttons', 
+  options = list(
+    dom = 'Bfrtip',
+    buttons = c( 'csv', 'excel', 'pdf', 'print')
+    )
+  )
+
+full_table
+```
+
+En tabell kan vara lite svår att smälta, för att dyrka upp innehållet har jag därför gjort lite cool analys av historiken. På så vis kan man exempelvis se många segrar eller andra placeringar dom olika fäktarna har lyckats med.
