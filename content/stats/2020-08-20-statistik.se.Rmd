@@ -118,6 +118,6 @@ long_hist %>%
             color = "#1380A1")
 
 ```
-Hela 15 fäktare har slutat bland de 3 bästa i KM. Som ni ser har Tor ett överväldigande försprång med hela 12 pallplatser, nästan lika många pallplatser som 2:an, 3:an och 4:an (Joar, Janne och Andrés) tillsammans!  
+Det visar sig att 15 fäktare har slutat bland de 3 bästa i KM. Som ni ser har Tor ett överväldigande försprång med hela 12 pallplatser, nästan lika många pallplatser som 2:an, 3:an och 4:an (Joar, Janne och Andrés) tillsammans!  
 
 Men låt oss titta på hur placeringarna fördelar sig, dvs hur många segrar, 2:a platser och 3:e platser.
