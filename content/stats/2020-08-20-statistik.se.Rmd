@@ -35,6 +35,7 @@ library(kableExtra)
 library(gt)
 library(ggplot2)
 library(here)
+theme_set(theme_minimal())
 ```
 
 
@@ -47,7 +48,12 @@ result_hist <- read_excel(here("assets", "data", "KM_tabeller.xlsx"))
 # Create a long dataset
 long_hist <- result_hist %>% 
   pivot_longer(c("1:a", "2:a", "3:a"), 
-                     names_to = "place", values_to = "name")
+                     names_to = "place", values_to = "full_name")
+
+# Separatet "full_name" to "first_name" and "last_name"
+long_hist <- long_hist %>% 
+  separate(full_name, into = c("first_name", "last_name"), sep = " ", remove = FALSE)
+
 # View(long_hist)
 
 # Add new categorical variable result based on variable
@@ -56,13 +62,10 @@ long_hist$result <- factor(long_hist$place, ordered = TRUE,
 
 # Create dataframe with name, place and count of place
 stat2 <- long_hist %>% 
-  group_by(name) %>% 
-  count(name, place, sort = TRUE)
+  group_by(first_name) %>% 
+  count(first_name, place, sort = TRUE)
 # View(stat2)
 
-# Separate name variable in stat2 df
-stat2 <- stat2 %>% 
-  separate(name, into = c("firstname", "lastname"))
 
 ```
 
@@ -99,4 +102,22 @@ En tabell kan vara lite svår att smälta. För att dyrka upp innehållet har ja
 
 Vi börjar analysen med att kolla på vilka fäktare som har placerat sig bland de 3 bästa och hur ofta det skett.
 
+```{r no_top3, echo=FALSE}
+long_hist %>% 
+  group_by(first_name) %>% 
+  count(first_name, sort = TRUE) %>% 
+  ggplot(aes(n, fct_reorder(first_name, n))) +
+  geom_col(fill = "chocolate") +
+  labs(title="Antal top 3 placeringar", 
+       subtitle = "Perioden 2006 till 2019",
+       caption = "Källa: Janne Tivenius och Andrés Gomez",
+       x= "", 
+       y="") +
+  geom_text(aes(label = n), 
+            hjust = -0.25, 
+            color = "#1380A1")
 
+```
+Hela 15 fäktare har slutat bland de 3 bästa i KM. Som ni ser har Tor ett överväldigande försprång med hela 12 pallplatser, nästan lika många pallplatser som 2:an, 3:an och 4:an (Joar, Janne och Andrés) tillsammans!  
+
+Men låt oss titta på hur placeringarna fördelar sig, dvs hur många segrar, 2:a platser och 3:e platser.
