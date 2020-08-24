@@ -17,3 +17,62 @@ image:
   preview_only: no
 projects: []
 ---
+
+```{r libraries, echo=FALSE, message=FALSE, warning=FALSE}
+# Load libraries
+library(tidyverse)
+library(readr)
+library(readxl)
+library(DT)
+library(gt)
+library(ggplot2)
+library(here)
+library(widgetframe)
+
+
+theme_set(theme_minimal())
+```
+
+
+Som FFF:are har ni säkert stått framför silverplaketten över klubbmästare och drömt om att se ert namn bland segrarna.
+
+Några andra har kanske, i tårögd vördnad, tittat på ert eget namn på plaketten. Och ytterligare några har möjligen räknat hur många inristningar som ni gett upphov till.
+
+För dom som inte ens känner till plakettens existens kan jag avslöja att det finns en silverplakett på vilken klubbmästares namn och år finns inristat.
+
+Ovavsett vilken av ovanstående kategorier ni tillhör har jag sammanställt informationen på plaketten. För att göra det enkelt för er att göra egna analyser serverar jag tabellen i ett annat format än ovan:
+
+</br>
+```{r km_plakett, echo=FALSE}
+# Load dataset
+plakett <- read_excel(here("assets", "data", "KM_plakett.xlsx"))
+
+# Create cool DT table
+ts <- datatable(
+  plakett,
+  rownames = FALSE,
+  colnames = c("År", "Fäktare"),
+  caption = "Lista över resultat 1944 till 2019",
+  extensions = 'Buttons', options = list(
+    dom = 'Bfrtip',
+    buttons = c( 'csv', 'excel', 'pdf', 'print')
+    )
+  )
+
+frameWidget(ts)
+```
+
+</br>
+
+Oj, där fanns det historik som sträcker sig från 1944! Den uppmärksamma tabellnörden ser dock att det finns vissa tidsluckor på plaketten.
+
+Första serien med inristningar sträcker sig över perioden 1944 till 1950. Därefter är det en lucka på 22 år där nästa tidserie som omfattar perioden 1972 till 1975 tar vid. Efter 1975 blir dett ytterligare ett hopp fram till 1982, varefter KM ser ut att ha hållits varje år till dags dato.  
+
+Vad kan man läsa ut från KM-plaketten? Det beror naturligtvis på vad man är intresserad av att studera. För min del börjar jag med konstatera att det totalt finns 49 inristningar totalt, men endast 19 unika namn. Det betyder att någon eller av några av namnen dyker upp flera gånger. Här kommer lite mer analys.
+
+## De som vunnit en gång
+
+För spänninens skull börjar vi med en tabell över de som lyckats med bragden att vinna KM 1 gång:
+
+
+
