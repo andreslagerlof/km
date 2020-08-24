@@ -1,0 +1,40 @@
+---
+title: "Regler och poängsystem"
+date: '2020-08-19'
+output: html_document
+weight: 20
+
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(here)
+library(gt)
+```
+
+
+## Tävlingsformat
+KM består av 5 stycken deltävlingar där deltagarna får poäng baserat på placering. Tävlingsformatet är alla möter alla i match om 5 stötar. Matcherna protokollförs och deltagarna ansvarar själva för att fylla i resultat samt att räkna samman antal segrar, utdelade och mottagna stötar samt stötindex.
+
+## Poängsystem
+Poängsumman från de 4 bästa placeringarna räknas samman och den fäktare med flest poäng vinner. Om flera fäktare har samma poäng vid sammanräkningen avgörs placeringen av bästa placeringen, dvs flest 1:a platser, flest 2:a platser, etc. Om även där lika avgörs placeringarna 1-3 genom omfäktning.  
+
+Och så här ser poänfördelningen ut:
+
+
+```{r point_table, echo=FALSE}
+# Read the csv file "new_pointsystem.csv"
+dt <- read.csv(here("assets", "data", "new_pointsystem.csv"))
+
+# Rename variable names
+dt <- dt %>% rename(Placering = Place, Poäng = Point)
+
+# Create gt-table
+gt_table <- gt(data = dt)
+
+# Print table
+gt_table
+```
+
+ 
+

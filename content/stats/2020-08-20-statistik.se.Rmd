@@ -35,7 +35,10 @@ library(kableExtra)
 library(gt)
 library(ggplot2)
 library(here)
+
+
 theme_set(theme_minimal())
+
 ```
 
 
@@ -100,9 +103,12 @@ En tabell kan vara lite svår att smälta. För att dyrka upp innehållet har ja
 
 ### Antal pallplatser per fäktare  
 
-Vi börjar analysen med att kolla på vilka fäktare som har placerat sig bland de 3 bästa och hur ofta det skett.
+Eftersom perioden är 2006 till 2019 så kan vi lista ut att det är 14 omgångar som har avverkats, med en 1:a till 3:e plats per år. Det gör att det finns totalt 42 platser att fördela på olika fäktare. Gör man snabb titt på tabellen ovan såg man också att några namn upprepas.  
+
+Vi börjar väl analysen med att kolla på vilka fäktare som har placerat sig bland de 3 bästa och hur ofta det skett.
 
 ```{r no_top3, echo=FALSE}
+# Create of top 3
 long_hist %>% 
   group_by(first_name) %>% 
   count(first_name, sort = TRUE) %>% 
@@ -118,6 +124,77 @@ long_hist %>%
             color = "#1380A1")
 
 ```
-Det visar sig att 15 fäktare har slutat bland de 3 bästa i KM. Som ni ser har Tor ett överväldigande försprång med hela 12 pallplatser, nästan lika många pallplatser som 2:an, 3:an och 4:an (Joar, Janne och Andrés) tillsammans!  
+Det visar sig att 15 fäktare har slutat bland de 3 bästa i KM och mycket riktigt finns det några som hållit sig framme påfallande ofta, men ingen lika frekvent som Tor. Som ni ser har Tor ett överväldigande försprång med hela 12 pallplatser, nästan lika många pallplatser som 2:an, 3:an och 4:an (Joar, Janne och Andrés) tillsammans!  
 
-Men låt oss titta på hur placeringarna fördelar sig, dvs hur många segrar, 2:a platser och 3:e platser.
+Men nu när vi har värmt upp oss kan vi ju titta på hur placeringarna fördelar sig, dvs hur många segrar, 2:a platser och 3:e platser som de olika kombattanterna har lyckats samla ihop.
+
+## Antal segrar per fäktare
+Vi börjar med att kika på vilka som har nått allra längst och kammat hem den åtråvärda KM-titeln:
+
+```{r winners, echo=FALSE}
+# Create plot of winners
+long_hist %>% 
+  filter(place == "1:a") %>% 
+  group_by(first_name) %>% 
+  count(first_name, sort = TRUE) %>% 
+  ggplot(aes(n, fct_reorder(first_name, n))) +
+  geom_col(fill = "darkolivegreen") +
+  labs(title="Antal segrar per fäktare", 
+       subtitle = "Perioden 2006 till 2019",
+       caption = "Källa: Janne Tivenius och Andrés Gomez",
+       x= "", 
+       y="") +
+  geom_text(aes(label = n), 
+            hjust = -0.25, 
+            color = "#1380A1")
+```
+Över den studerade 14-årsperioden har 8 fäktare lyckats vinna. Inte oväntat hamnar Tor på toppen igen med hela 5 segrar. Det innebär att nästan hälften av gångerna han är bland de 3 första så erövrar han 1:a platsen! Joar, med sina 3 segrar, visar också att han ligger en bra bit före klungan av “one hit wonders”. Hur ser det ut med 2:a platser?
+
+## Antal 2:a platser, per fäktare
+Så här ser analysen ut:
+
+```{r second_places, echo=FALSE}
+# Create plot over runners up
+long_hist %>% 
+  filter(place == "2:a") %>% 
+  group_by(first_name) %>% 
+  count(first_name, sort = TRUE) %>% 
+  ggplot(aes(n, fct_reorder(first_name, n))) +
+  geom_col(fill = "dodgerblue") +
+  labs(title="Antal 2:a platser per fäktar", 
+       subtitle = "Perioden 2006 till 2019",
+       caption = "Källa: Janne Tivenius och Andrés Gomez",
+       x= "", 
+       y="") +
+  geom_text(aes(label = n), 
+            hjust = -0.25, 
+            color = "#1380A1")
+
+```
+Återigen är det 8 fäktare som tagits sig så långt att de knipit en 2:a plats. Och återigen är det Tor som gjort det oftast. Denna gång är avståndet inte lika långt till Janne och Andrés som båda ligger före gruppen om 5 fäktare som tagit denna placering en gång.
+
+## Antal 3:e platser per fäktare
+Slutligen en figur över fördelningen av 3:e platser:
+
+```{r thirds, echo=FALSE}
+# Create plot of 3rd places
+long_hist %>% 
+  filter(place == "3:a") %>% 
+  group_by(first_name) %>% 
+  count(first_name, sort = TRUE) %>% 
+  ggplot(aes(n, fct_reorder(first_name, n))) +
+  geom_col(fill = "wheat4") +
+  labs(title="Antal 3:e platser per fäktare", 
+       subtitle = "Perioden 2006 till 2019",
+       caption = "Källa: Janne Tivenius och Andrés Gomez",
+       x= "", 
+       y="") +
+  geom_text(aes(label = n), 
+            hjust = -0.25, 
+            color = "#1380A1")
+```
+Nu är det hela 10 fäktare som kan stoltsera med sina namn! Och denna gång får Tor god konkurrens av klubbens två veteranlandslagsmän i form av Janne och CH. Men, som ni ser är de båda en 3:e plats efter Tor som går ut som segrare även i denna viktklass.  
+
+Som ni säkert har noterat är den senaste 14-årsperioden endast ett litet utsnitt av FFFs stolta historia. Vad hände innan 2006? För att ta reda på det får ni följa med i djupdykningen i berättelsen som KM-plaketten avslöjar!
+
+

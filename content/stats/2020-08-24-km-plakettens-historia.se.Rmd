@@ -1,0 +1,19 @@
+---
+title: KM-plakettens historia
+author: Andrés Gomez
+date: '2020-08-24'
+slug: km-plakettens-historia
+weight: 20  # Order that this section will appear.
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-08-24T20:45:32+02:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
