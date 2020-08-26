@@ -3,7 +3,8 @@ title: KM-plakettens historia
 author: Andrés Gomez
 date: '2020-08-24'
 slug: km-plakettens-historia
-weight: 20  # Order that this section will appear.
+url: #km_plaketten
+weight: 30  # Order that this section will appear.
 categories: []
 tags: []
 subtitle: ''
@@ -72,7 +73,63 @@ Vad kan man läsa ut från KM-plaketten? Det beror naturligtvis på vad man är 
 
 ## De som vunnit en gång
 
-För spänninens skull börjar vi med en tabell över de som lyckats med bragden att vinna KM 1 gång:
+För spänninens skull börjar vi med en tabell över de som lyckats med bragden att vinna KM 1 gång:  
 
+</b>
+```{r plkett_ont_timers, echo=FALSE}
+# Add new variable with counts of total victories for each Name
+plakett <- plakett %>% 
+  add_count(Name, sort = TRUE)
 
+# Filter out Names with one victory
+one_time_winners<- plakett %>% filter(n == 1) %>% 
+  select(-n) %>% 
+  relocate(Name, Year)
+  
+
+# Create table of one-time winners
+gt(data = one_time_winners) %>% 
+  tab_header(
+    title = "Fäkttare som vunnit KM en gång"
+    ) %>% 
+  cols_label(
+    Year = "År", 
+    Name = "Namn"
+  ) %>% 
+    cols_align(
+    align = "left",
+    columns = vars(Year)
+  ) %>%
+  tab_source_note(
+    source_note = md("*Källa: KM-plakett, 2019*")
+  )
+  
+```
+
+Totalt sett har 11 personer lyckats vinna en gång, från den legendariske [Sven Thofelt](https://sv.wikipedia.org/wiki/Sven_Thofelt) år 1944 till vår uppskattade tränare Grigori Besking år 2017. Lite roligt att notera är att man i detta segment också kan hitta det enda far- och sonparet! Johan och Kalle kan båda stoltsera med sina namn på listan.  
+
+## De som vunnit flera gånger
+Redan tidigare har vi kunnat konstatera att det finns fäktare som har flera segrar på sitt samvete. Bland dom är Tor den mest notoriska segraren under perioden 2006 till 2019. Hur ser det ut om man kollar en längre tidsperiod? Svaret ser ni här:
+
+</b>
+
+```{r multi_winners, echo=FALSE}
+# Create plot of winners
+plakett %>% 
+  filter(n > 1) %>% 
+  select(Name, n) %>% 
+  group_by(Name) %>% 
+  count(Name, sort = TRUE) %>% 
+  ggplot(aes(n, fct_reorder(Name, n))) +
+  geom_col(fill = "gold") +
+  labs(title="Fäktare som vunnit KM mer än en gång",
+       caption = "Källa:KM-plakett, 2019",
+       x= "", 
+       y="") +
+  geom_text(aes(label = n), 
+            hjust = -0.25, 
+            color = "#1380A1")
+```
+
+Se på tusan om inte Tor dyker upp igen! Hela 12 segrar, dubbelt så många som 2:an Joar! Den med gott minne och kunskaper i addition inser också att 7 av dessa segrar kom före år 2006. Han måste således ha hittat ett framgångsrikt recept att behålla vinnarformen som står emot tidens tand. Efter dessa båda kommer några fäktare med 4-5 inteckningar. Listan avslutas med duon Göran Lagerberg och CH Wendt.
 

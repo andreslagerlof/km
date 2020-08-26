@@ -3,8 +3,9 @@ title: "Resultat från 2006 till 2019"
 pagetitle: "Statistik"
 author: Andrés
 date: '2020-08-20'
-weight: 10  # Order that this section will appear.
+weight: 20  # Order that this section will appear.
 slug: statistik
+url: #resultat_2006_2019
 categories: []
 tags: []
 subtitle: ''
@@ -22,8 +23,6 @@ projects: []
 ## Resultattabell för perioden från 2006 till 2019  
 
 För den nostaligiske har jag lagt upp en lista över placeringar 1-3 i tidigare års KM-tävlingar. Jag har byggt vidare på de uppgifter som jag fått från Jan Tivenius som var tävlingsledare fram till och med 2018, varefter jag tog över.  
-
-*Tack för hjälpen Janne!*  
 
 ```{r load_libraries, include=FALSE}
 # Load libraries
