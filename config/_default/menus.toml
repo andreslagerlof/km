@@ -11,13 +11,18 @@
 [[main]]
   name = "Regler & system"
   url = "#rules"
-  weight = 10
+  weight = 30
 
 
 [[main]]
-  name = "Posts"
-  url = "#posts"
+  name = "Nyheter"
+  url = "#nyheter"
   weight = 20
+
+ [[main]]
+  name = "Datum"
+  url = "#datum"
+  weight = 30
 
 # [[main]]
 #  name = "Projects"
@@ -35,9 +40,9 @@
   weight = 50
 
 [[main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 60
+  name = "Kontakt"
+  url = "#kontakt"
+  weight = 130
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

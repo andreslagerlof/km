@@ -2,7 +2,7 @@
 title: "Regler och poängsystem"
 date: '2020-08-19'
 output: html_document
-weight: 20
+weight: 30
 
 ---
 

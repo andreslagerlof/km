@@ -19,4 +19,4 @@ projects: []
 ---
 
 
-Den här statistiköversynen är uppdelad i två sektioner, den ena tar upp  [perioden 2006 till 2019](#2020-08-20-statistik.se). Den andra avser hela den tid från vilken vi har tillgängligt statistikst underlag i form av KM-plaketten [KM-plaketten](#2020-08-24-km-plakettens-historia.se). Anledningen till denna uppdelning är att underlaget från den förstnämnda perioden är betydligt bättre då den inte bara omfattar vinnare utan även innehåller information om placeringarna 2 och 3. **Till detta är vi skyldiga Janne Tivenius ett stort tack!**
+Den här statistiköversynen är uppdelad i två sektioner, den ena tar upp  [perioden 2006 till 2019](#2020-08-20-statistik.se). Den andra avser hela den tid från vilken vi har tillgängligt statistikst underlag i form av KM-plaketten [KM-plaketten](#2020-08-24-km-plakettens-historia.se). Anledningen till denna uppdelning är att underlaget från den förstnämnda perioden är betydligt bättre då den inte bara omfattar vinnare utan även innehåller information om placeringarna 2 och 3. *Till detta är vi skyldiga Janne Tivenius ett stort tack!*
