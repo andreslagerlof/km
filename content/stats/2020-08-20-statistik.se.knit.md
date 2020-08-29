@@ -20,16 +20,22 @@ image:
 projects: []
 ---
 
+## Resultattabell för perioden från 2006 till 2019  
+
+För den nostaligiske har jag lagt upp en lista över placeringar 1-3 i tidigare års KM-tävlingar. Jag har byggt vidare på de uppgifter som jag fått från Jan Tivenius som var tävlingsledare fram till och med 2018, varefter jag tog över.  
 
 
-<div id="resultattabell-för-perioden-från-2006-till-2019" class="section level2">
-<h2>Resultattabell för perioden från 2006 till 2019</h2>
-<p>För den nostaligiske har jag lagt upp en lista över placeringar 1-3 i tidigare års KM-tävlingar. Jag har byggt vidare på de uppgifter som jag fått från Jan Tivenius som var tävlingsledare fram till och med 2018, varefter jag tog över.</p>
-<style>html {
+
+
+
+
+
+
+<!--html_preserve--><style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#gyzmefodan .gt_table {
+#mokqrvjlew .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -54,7 +60,7 @@ projects: []
   border-left-color: #D3D3D3;
 }
 
-#gyzmefodan .gt_heading {
+#mokqrvjlew .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -66,7 +72,7 @@ projects: []
   border-right-color: #D3D3D3;
 }
 
-#gyzmefodan .gt_title {
+#mokqrvjlew .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -76,7 +82,7 @@ projects: []
   border-bottom-width: 0;
 }
 
-#gyzmefodan .gt_subtitle {
+#mokqrvjlew .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -86,13 +92,13 @@ projects: []
   border-top-width: 0;
 }
 
-#gyzmefodan .gt_bottom_border {
+#mokqrvjlew .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gyzmefodan .gt_col_headings {
+#mokqrvjlew .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -107,7 +113,7 @@ projects: []
   border-right-color: #D3D3D3;
 }
 
-#gyzmefodan .gt_col_heading {
+#mokqrvjlew .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -127,7 +133,7 @@ projects: []
   overflow-x: hidden;
 }
 
-#gyzmefodan .gt_column_spanner_outer {
+#mokqrvjlew .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -139,15 +145,15 @@ projects: []
   padding-right: 4px;
 }
 
-#gyzmefodan .gt_column_spanner_outer:first-child {
+#mokqrvjlew .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gyzmefodan .gt_column_spanner_outer:last-child {
+#mokqrvjlew .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gyzmefodan .gt_column_spanner {
+#mokqrvjlew .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -159,7 +165,7 @@ projects: []
   width: 100%;
 }
 
-#gyzmefodan .gt_group_heading {
+#mokqrvjlew .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -181,7 +187,7 @@ projects: []
   vertical-align: middle;
 }
 
-#gyzmefodan .gt_empty_group_heading {
+#mokqrvjlew .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -196,15 +202,15 @@ projects: []
   vertical-align: middle;
 }
 
-#gyzmefodan .gt_from_md > :first-child {
+#mokqrvjlew .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gyzmefodan .gt_from_md > :last-child {
+#mokqrvjlew .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gyzmefodan .gt_row {
+#mokqrvjlew .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -223,7 +229,7 @@ projects: []
   overflow-x: hidden;
 }
 
-#gyzmefodan .gt_stub {
+#mokqrvjlew .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -235,7 +241,7 @@ projects: []
   padding-left: 12px;
 }
 
-#gyzmefodan .gt_summary_row {
+#mokqrvjlew .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -245,7 +251,7 @@ projects: []
   padding-right: 5px;
 }
 
-#gyzmefodan .gt_first_summary_row {
+#mokqrvjlew .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -255,7 +261,7 @@ projects: []
   border-top-color: #D3D3D3;
 }
 
-#gyzmefodan .gt_grand_summary_row {
+#mokqrvjlew .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -265,7 +271,7 @@ projects: []
   padding-right: 5px;
 }
 
-#gyzmefodan .gt_first_grand_summary_row {
+#mokqrvjlew .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -275,11 +281,11 @@ projects: []
   border-top-color: #D3D3D3;
 }
 
-#gyzmefodan .gt_striped {
+#mokqrvjlew .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gyzmefodan .gt_table_body {
+#mokqrvjlew .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -288,7 +294,7 @@ projects: []
   border-bottom-color: #D3D3D3;
 }
 
-#gyzmefodan .gt_footnotes {
+#mokqrvjlew .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -302,13 +308,13 @@ projects: []
   border-right-color: #D3D3D3;
 }
 
-#gyzmefodan .gt_footnote {
+#mokqrvjlew .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#gyzmefodan .gt_sourcenotes {
+#mokqrvjlew .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -322,46 +328,46 @@ projects: []
   border-right-color: #D3D3D3;
 }
 
-#gyzmefodan .gt_sourcenote {
+#mokqrvjlew .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#gyzmefodan .gt_left {
+#mokqrvjlew .gt_left {
   text-align: left;
 }
 
-#gyzmefodan .gt_center {
+#mokqrvjlew .gt_center {
   text-align: center;
 }
 
-#gyzmefodan .gt_right {
+#mokqrvjlew .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gyzmefodan .gt_font_normal {
+#mokqrvjlew .gt_font_normal {
   font-weight: normal;
 }
 
-#gyzmefodan .gt_font_bold {
+#mokqrvjlew .gt_font_bold {
   font-weight: bold;
 }
 
-#gyzmefodan .gt_font_italic {
+#mokqrvjlew .gt_font_italic {
   font-style: italic;
 }
 
-#gyzmefodan .gt_super {
+#mokqrvjlew .gt_super {
   font-size: 65%;
 }
 
-#gyzmefodan .gt_footnote_marks {
+#mokqrvjlew .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="gyzmefodan" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="mokqrvjlew" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="4" class="gt_heading gt_title gt_font_normal" style>Placeringar 1 till 3 i KM</th>
@@ -475,33 +481,39 @@ projects: []
     </tr>
   </tfoot>
   
-</table></div>
-<p>En tabell kan vara lite svår att smälta. För att dyrka upp innehållet har jag därför gjort lite cool analys av historiken så att ni kan se många segrar eller andra placeringar dom olika fäktarna har lyckats med.</p>
-<div id="antal-pallplatser-per-fäktare" class="section level3">
-<h3>Antal pallplatser per fäktare</h3>
-<p>Eftersom perioden är 2006 till 2019 så kan vi lista ut att det är 14 omgångar som har avverkats, med en 1:a till 3:e plats per år. Det gör att det finns totalt 42 platser att fördela på olika fäktare. Gör man snabb titt på tabellen ovan såg man också att några namn upprepas.</p>
-<p>Vi börjar väl analysen med att kolla på vilka fäktare som har placerat sig bland de 3 bästa och hur ofta det skett.</p>
-<p><img src="/stats/2020-08-20-statistik.se_files/figure-html/no_top3-1.png" width="672" />
-Det visar sig att 15 fäktare har slutat bland de 3 bästa i KM och mycket riktigt finns det några som hållit sig framme påfallande ofta, men ingen lika frekvent som Tor. Som ni ser har Tor ett överväldigande försprång med hela 12 pallplatser, nästan lika många pallplatser som 2:an, 3:an och 4:an (Joar, Janne och Andrés) tillsammans!</p>
-<p>Men nu när vi har värmt upp oss kan vi ju titta på hur placeringarna fördelar sig, dvs hur många segrar, 2:a platser och 3:e platser som de olika kombattanterna har lyckats samla ihop.</p>
-</div>
-</div>
-<div id="antal-segrar-per-fäktare" class="section level2">
-<h2>Antal segrar per fäktare</h2>
-<p>Vi börjar med att kika på vilka som har nått allra längst och kammat hem den åtråvärda KM-titeln:</p>
-<p><img src="/stats/2020-08-20-statistik.se_files/figure-html/winners-1.png" width="672" />
-Över den studerade 14-årsperioden har 8 fäktare lyckats vinna. Inte oväntat hamnar Tor på toppen igen med hela 5 segrar. Det innebär att nästan hälften av gångerna han är bland de 3 första så erövrar han 1:a platsen! Joar, med sina 3 segrar, visar också att han ligger en bra bit före klungan av “one hit wonders”. Hur ser det ut med 2:a platser?</p>
-</div>
-<div id="antal-2a-platser-per-fäktare" class="section level2">
-<h2>Antal 2:a platser, per fäktare</h2>
-<p>Så här ser analysen ut:</p>
-<p><img src="/stats/2020-08-20-statistik.se_files/figure-html/second_places-1.png" width="672" />
-Återigen är det 8 fäktare som tagits sig så långt att de knipit en 2:a plats. Och återigen är det Tor som gjort det oftast. Denna gång är avståndet inte lika långt till Janne och Andrés som båda ligger före gruppen om 5 fäktare som tagit denna placering en gång.</p>
-</div>
-<div id="antal-3e-platser-per-fäktare" class="section level2">
-<h2>Antal 3:e platser per fäktare</h2>
-<p>Slutligen en figur över fördelningen av 3:e platser:</p>
-<p><img src="/stats/2020-08-20-statistik.se_files/figure-html/thirds-1.png" width="672" />
-Nu är det hela 10 fäktare som kan stoltsera med sina namn! Och denna gång får Tor god konkurrens av klubbens två veteranlandslagsmän i form av Janne och CH. Men, som ni ser är de båda en 3:e plats efter Tor som går ut som segrare även i denna viktklass.</p>
-<p>Som ni säkert har noterat är den senaste 14-årsperioden endast ett litet utsnitt av FFFs stolta historia. Vad hände innan 2006? För att ta reda på det får ni följa med i djupdykningen i berättelsen som KM-plaketten avslöjar!</p>
-</div>
+</table></div><!--/html_preserve-->
+
+En tabell kan vara lite svår att smälta. För att dyrka upp innehållet har jag därför gjort lite cool analys av historiken så att ni kan se många segrar eller andra placeringar dom olika fäktarna har lyckats med.
+
+### Antal pallplatser per fäktare  
+
+Eftersom perioden är 2006 till 2019 så kan vi lista ut att det är 14 omgångar som har avverkats, med en 1:a till 3:e plats per år. Det gör att det finns totalt 42 platser att fördela på olika fäktare. Gör man snabb titt på tabellen ovan såg man också att några namn upprepas.  
+
+Vi börjar väl analysen med att kolla på vilka fäktare som har placerat sig bland de 3 bästa och hur ofta det skett.
+
+<img src="2020-08-20-statistik.se_files/figure-html/no_top3-1.png" width="672" />
+Det visar sig att 15 fäktare har slutat bland de 3 bästa i KM och mycket riktigt finns det några som hållit sig framme påfallande ofta, men ingen lika frekvent som Tor. Som ni ser har Tor ett överväldigande försprång med hela 12 pallplatser, nästan lika många pallplatser som 2:an, 3:an och 4:an (Joar, Janne och Andrés) tillsammans!  
+
+Men nu när vi har värmt upp oss kan vi ju titta på hur placeringarna fördelar sig, dvs hur många segrar, 2:a platser och 3:e platser som de olika kombattanterna har lyckats samla ihop.
+
+## Antal segrar per fäktare
+Vi börjar med att kika på vilka som har nått allra längst och kammat hem den åtråvärda KM-titeln:
+
+<img src="2020-08-20-statistik.se_files/figure-html/winners-1.png" width="672" />
+Över den studerade 14-årsperioden har 8 fäktare lyckats vinna. Inte oväntat hamnar Tor på toppen igen med hela 5 segrar. Det innebär att nästan hälften av gångerna han är bland de 3 första så erövrar han 1:a platsen! Joar, med sina 3 segrar, visar också att han ligger en bra bit före klungan av “one hit wonders”. Hur ser det ut med 2:a platser?
+
+## Antal 2:a platser, per fäktare
+Så här ser analysen ut:
+
+<img src="2020-08-20-statistik.se_files/figure-html/second_places-1.png" width="672" />
+Återigen är det 8 fäktare som tagits sig så långt att de knipit en 2:a plats. Och återigen är det Tor som gjort det oftast. Denna gång är avståndet inte lika långt till Janne och Andrés som båda ligger före gruppen om 5 fäktare som tagit denna placering en gång.
+
+## Antal 3:e platser per fäktare
+Slutligen en figur över fördelningen av 3:e platser:
+
+<img src="2020-08-20-statistik.se_files/figure-html/thirds-1.png" width="672" />
+Nu är det hela 10 fäktare som kan stoltsera med sina namn! Och denna gång får Tor god konkurrens av klubbens två veteranlandslagsmän i form av Janne och CH. Men, som ni ser är de båda en 3:e plats efter Tor som går ut som segrare även i denna viktklass.  
+
+Som ni säkert har noterat är den senaste 14-årsperioden endast ett litet utsnitt av FFFs stolta historia. Vad hände innan 2006? För att ta reda på det får ni följa med i djupdykningen i berättelsen som KM-plaketten avslöjar!
+
+
