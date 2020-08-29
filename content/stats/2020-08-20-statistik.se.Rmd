@@ -114,7 +114,7 @@ long_hist %>%
   count(first_name, sort = TRUE) %>% 
   ggplot(aes(n, fct_reorder(first_name, n))) +
   geom_col(fill = "chocolate") +
-  theme(axis.text.y = element_text(size = 7)) +             # y-axis text size
+  theme(axis.text.y = element_text(size = 12)) +             # y-axis text size
   labs(title="Antal top 3 placeringar", 
        subtitle = "Perioden 2006 till 2019",
        caption = "Källa: Janne Tivenius och Andrés Gomez",
