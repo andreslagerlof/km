@@ -122,7 +122,7 @@ plakett %>%
   count(Name, sort = TRUE) %>% 
   ggplot(aes(n, fct_reorder(Name, n))) +
   geom_col(fill = "gold") +
-  theme(axis.text.y = element_text(size = rel(1.7))) + # y-axis text size
+  theme(axis.text.y = element_text(size = rel(2))) + # y-axis text size
   labs(title="Fäktare som vunnit KM mer än en gång",
        caption = "Källa:KM-plakett, 2019",
        x= "", 
