@@ -114,7 +114,7 @@ long_hist %>%
   count(first_name, sort = TRUE) %>% 
   ggplot(aes(n, fct_reorder(first_name, n))) +
   geom_col(fill = "chocolate") +
-  theme(axis.text.y = element_text(size = rel(1.5))) +             # y-axis text size
+  theme(axis.text.y = element_text(size = rel(1.7))) + # y-axis text size
   labs(title="Antal top 3 placeringar", 
        subtitle = "Perioden 2006 till 2019",
        caption = "Källa: Janne Tivenius och Andrés Gomez",
@@ -140,6 +140,7 @@ long_hist %>%
   count(first_name, sort = TRUE) %>% 
   ggplot(aes(n, fct_reorder(first_name, n))) +
   geom_col(fill = "darkolivegreen") +
+  theme(axis.text.y = element_text(size = rel(1.7))) + # y-axis text size
   labs(title="Antal segrar per fäktare", 
        subtitle = "Perioden 2006 till 2019",
        caption = "Källa: Janne Tivenius och Andrés Gomez",
@@ -162,6 +163,7 @@ long_hist %>%
   count(first_name, sort = TRUE) %>% 
   ggplot(aes(n, fct_reorder(first_name, n))) +
   geom_col(fill = "dodgerblue") +
+  theme(axis.text.y = element_text(size = rel(1.7))) + # y-axis text size
   labs(title="Antal 2:a platser per fäktar", 
        subtitle = "Perioden 2006 till 2019",
        caption = "Källa: Janne Tivenius och Andrés Gomez",
@@ -185,6 +187,7 @@ long_hist %>%
   count(first_name, sort = TRUE) %>% 
   ggplot(aes(n, fct_reorder(first_name, n))) +
   geom_col(fill = "wheat4") +
+  theme(axis.text.y = element_text(size = rel(1.7))) + # y-axis text size
   labs(title="Antal 3:e platser per fäktare", 
        subtitle = "Perioden 2006 till 2019",
        caption = "Källa: Janne Tivenius och Andrés Gomez",
