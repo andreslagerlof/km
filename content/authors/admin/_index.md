@@ -27,6 +27,8 @@ user_groups:
 - Visitors
 ---
 
-Den här sajten är till för alla som vill ställa upp på eller hålla sig informerad om vad som händer på FFFs klubbmästerskap. Här kan alla få reda på den senaste infomrationen rörande KM. Alla texter och kommentarer är mina egna och är tänkta att informera och kanske även roa.  
+Den här sajten är till för alla som vill ställa upp på eller hålla sig informerad om vad som händer på FFFs klubbmästerskap. Här kan alla få reda på den senaste infomrationen rörande KM. 
+
+Jag vill varana eventuella läsare att alla texter och kommentarer är mina egna och är därför av högst tveksam kvalitet. Tänken bakom texterna är att informera och kanske även roa.  
 
 Om ni har några synpunkter är det bara att höra av er till mej på klubben, via sajtens kontaktformulär eller via Twitter.

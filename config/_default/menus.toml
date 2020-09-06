@@ -9,20 +9,26 @@
 #  weight = 10
 
 [[main]]
-  name = "Regler & system"
-  url = "#rules"
-  weight = 30
-
-
-[[main]]
   name = "Nyheter"
   url = "#nyheter"
   weight = 20
+  
+[[main]]
+  name = "Resultat"
+  url = "#results"
+  weight = 30  
+
 
  [[main]]
   name = "Datum"
   url = "#datum"
-  weight = 30
+  weight = 40  
+
+[[main]]
+  name = "Regler & system"
+  url = "#rules"
+  weight = 50
+
 
 # [[main]]
 #  name = "Projects"
@@ -32,12 +38,12 @@
 [[main]]
   name = "Statistik"
   url = "stats/"
-  weight = 40
+  weight = 60
 
 [[main]]
   name = "Om sajten"
   url = "om/"
-  weight = 50
+  weight = 70
 
 [[main]]
   name = "Kontakt"

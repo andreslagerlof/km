@@ -1,0 +1,17 @@
+---
+title: "Resultat"
+subtitle: ""
+date: '2020-09-06'
+output: html_document
+weight: 30
+
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(here)
+library(gt)
+```
+
+När KM har börjat kommer ni se resultattabellen här!
+
