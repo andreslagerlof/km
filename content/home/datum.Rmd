@@ -24,4 +24,6 @@ library(gt)
 
 - [ ] **Deltävling 5 - torsdagen 26 november** Upprop kl 19:00 start kl 19:15
 
-OBS! Samtliga deltävlingar börjar kl. 19:15, med upprop kl. 19:00. Om ni kommer för sent får ni inte delta, se därför till att komma i god tid. Se också till att er utrustning är i toppskick. En värja räcker inte, se till att ha minst en extravärja.
+{{% alert warning %}}
+OBS! Samtliga deltävlingar börjar kl. 19:15, med upprop kl. 19:00. **Om ni kommer för sent får ni inte delta**, se därför till att komma i god tid. Se också till att er utrustning är i toppskick. En värja räcker inte, **se till att ha minst en extravärja.**
+{{% /alert %}}
