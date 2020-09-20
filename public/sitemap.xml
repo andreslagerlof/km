@@ -33,6 +33,41 @@
   </url>
   
   <url>
+    <loc>/tag/1/</loc>
+    <lastmod>2020-09-20T18:18:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/2020/</loc>
+    <lastmod>2020-09-20T18:18:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/deltavling/</loc>
+    <lastmod>2020-09-20T18:18:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/jonte-i-taten/</loc>
+    <lastmod>2020-09-20T18:18:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-09-20T18:18:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/resultat/</loc>
+    <lastmod>2020-09-20T18:18:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-09-20T18:18:03+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2020-09-06T21:50:22+02:00</lastmod>
   </url>
@@ -44,16 +79,6 @@
   
   <url>
     <loc>/category/demo/</loc>
-    <lastmod>2020-09-06T21:50:22+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-09-06T21:50:22+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-09-06T21:50:22+02:00</lastmod>
   </url>
   

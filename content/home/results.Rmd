@@ -15,7 +15,7 @@ library(kableExtra)
 library(readxl)
 ```
 
-Hittills har vi endast fäktat 1 av totalt 5 deltävlingar. Här är den aktuella poängställningen:
+Här är den aktuella poängställningen efter den första av fem deltävlingar:
 
 ```{r data_prep, include=FALSE}
 # Import result dataset from first competition
