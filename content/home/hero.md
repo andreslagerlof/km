@@ -51,7 +51,7 @@ title = "KM 2020"
 #   label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates"   data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
-**Nu har KM börjat!** Skriv in dej hos stjärnorna!
+**Nu har KM börjat!** Skriv in dej bland stjärnorna, ställ upp på nästa deltävling!
 
 
 
