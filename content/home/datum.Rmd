@@ -16,9 +16,9 @@ library(gt)
 
 - [x] ~~**Deltävling 1  - torsdagen 17 september** Upprop kl 19:00 start kl 19:15~~
 
-- [x] **Deltävling 2 - torsdagen 1 oktober** Upprop kl 19:00 start kl 19:15
+- [x] ~~**Deltävling 2 - torsdagen 1 oktober** Upprop kl 19:00 start kl 19:15~~
 
-- [ ] **Deltävling 3 - torsdagen 22 oktober** Upprop kl 19:00 start kl 19:15
+- [x] **Deltävling 3 - torsdagen 22 oktober** Upprop kl 19:00 start kl 19:15
 
 - [ ] **Deltävling 4 - torsdagen 12 november** Upprop kl 19:00 start kl 19:15
 
