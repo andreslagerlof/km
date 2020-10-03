@@ -7,10 +7,12 @@ categories: []
 tags:
   - '2020'
   - deltävling
+  - preview
+  - "1"
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2020-09-29T12:37:45+02:00'
+lastmod: '2020-10-03T10:52:45+02:00'
 featured: no
 image:
   caption: ''
