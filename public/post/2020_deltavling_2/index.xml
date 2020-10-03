@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2 | FFF KM</title>
-    <link>/tag/2/</link>
-      <atom:link href="/tag/2/index.xml" rel="self" type="application/rss+xml" />
-    <description>2</description>
+    <title>Posts | FFF KM</title>
+    <link>/post/2020_deltavling_2/</link>
+      <atom:link href="/post/2020_deltavling_2/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 03 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu7f083c38db14ba5273db11854663431c_24946_512x512_fill_lanczos_center_2.png</url>
-      <title>2</title>
-      <link>/tag/2/</link>
+      <url>/post/2020_deltavling_2/featured.jpg</url>
+      <title>Posts</title>
+      <link>/post/2020_deltavling_2/</link>
     </image>
     
     <item>
       <title>Grigori segrare i deltävling 2</title>
-      <link>/post/grigori-segrare-deltavling-2/</link>
+      <link>/post/2020_deltavling_2/grigori-segrare-deltavling-2/</link>
       <pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/post/grigori-segrare-deltavling-2/</guid>
+      <guid>/post/2020_deltavling_2/grigori-segrare-deltavling-2/</guid>
       <description>
 &lt;script src=&#34;/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
 &lt;link href=&#34;/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
@@ -266,32 +266,6 @@ Nils Viklund
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Inför deltävling 2</title>
-      <link>/post/infor-deltavling-2/</link>
-      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/post/infor-deltavling-2/</guid>
-      <description>
-
-
-&lt;p&gt;Snart är det dags igen! Vi minns alla hur Jonathan med lätta steg och ett brett leende gav sig iväg i höstnatten efter att ha utraderat allt motstånd i årets första deltävling. Lika mycket minns vi Grigoris andraplats och CHs näsplugg som sporrade honom till en imponerande 3e placering.&lt;/p&gt;
-&lt;p&gt;Men vad har vi att se fram emot till nästa runda? Här är ett urval som tävlingens pressavdelning har sammanställt:&lt;/p&gt;
-&lt;div id=&#34;vad-kan-vi-lära-av-saf-pokalen&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Vad kan vi lära av SAF-pokalen?&lt;/h3&gt;
-&lt;p&gt;Som förberedelse för KMs 2a deltävling var SAF vänliga nog att arrangera SAF-pokalen. Eftersom Jonathan redan vunnit första deltävlingen på KM så hoppade han över SAF-pokalen, men av allt att döma kommer han att göra väl ifrån sig i KMs deltävling 2.&lt;/p&gt;
-&lt;p&gt;Grigori visade sin klass och lät ingen motståndare tro annat. Tittar vi på hur han brukar prestera på deltävling 2 så vet vi att han har siktet inställt på seger (han vann i alla fall motsvarande tävling förra året).&lt;/p&gt;
-&lt;p&gt;Den som glömt bort Tor bör tänka sig för igen. En 2a plats på SAF skvallrar om en brant stigande formkurva och vi vet ju att Tor ständigt är en segerkandidat att räkna med.&lt;/p&gt;
-&lt;p&gt;CH valde på ett slugt sätt kliva ur helgens tävling lite tidigare för att spara på krafterna till KM. Han blir säkert att räkna med. Kan han briljera med ytterligare 3e plats? Högst troligt tror många.&lt;/p&gt;
-&lt;p&gt;Förkylning tvingade Karsten att avstå från första deltävlingen, men i helgen visade han att han sannerligen kommer att blanda sig in i toppstriden.&lt;/p&gt;
-&lt;p&gt;Elvira visade också var skåpet ska stå, hon kommer säkert att fortsätta i samma anda på KM.&lt;/p&gt;
-&lt;p&gt;Janne gjorde också bra ifrån sig så även där något att se upp för.&lt;/p&gt;
-&lt;p&gt;Och slutligen, våra yngre förmågor som exempelvis Ian och Hugo…det är bara en tidsfråga innan dom kommer att roffa åt sig åtskilliga poäng i tävlingen.&lt;/p&gt;
-&lt;p&gt;Kort sagt, fältet är öppet för en hård, spännande och framförallt rolig drabbning.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Vi ses på torsdag!&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
 </description>
     </item>
     

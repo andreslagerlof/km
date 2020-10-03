@@ -1,0 +1,87 @@
+---
+title: Grigori segrare i deltävling 2
+author: Andrés Gomez
+date: '2020-10-03'
+slug: grigori-segrare-deltavling-2
+categories: []
+tags:
+  - '2020'
+  - deltävling
+  - '2'
+  - resultat
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-10-03T15:50:49+02:00'
+featured: no
+image:
+  placement: 3
+  caption: 'Grigori och Christopher innan omfäktningen'
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{r load_packages, include=FALSE}
+library(tidyverse)
+library(kableExtra)
+library(here)
+library(readxl)
+
+# To place a post image: https://babichmorrowc.github.io/post/adding-featured-images-to-posts/
+```
+
+Så kan vi lägga ytterligare en deltävling till KM-historiken, och den här tävlingen kommer det att pratas om länge!  
+
+Hela 20 fäktare brakade ihop med glöd i torsdagens tävling. Återigen kunde vi glädjas åt att få celebert besök, denna gång i form av Johan Lewin, Jakob Stymne och Christopher Kelly, alla från DIF.  
+
+Startfältet lystes dessutom upp av Karsten Kaping och Robert Brolin som båda gjorde säsongsdebut i tävlingen och gjorde det med emfas. Båda visade att tydligt att dom inte har annat än topplaceringar i siktet. Denna gång räckte det till en 4:e respektive 5:e placering, mycket bra! Dom som känner de båda herrarna vet att torsdagens resultat bara är en försmak på det som komma skall.  
+
+Tyvärr saknade vi flera av våra duktiga damfäktare som exempelvis Elvira, Selma, Sophie och Åsa men Natalie var på plats och gjorde som vanligt bra ifrån sig.  
+
+Men vilka gjorde upp om pallplatserna? Precis som många hade förutspått rullade CH på i samma segerrusiga anda som förra gången. Han följde upp den fenomenala 3:e platsen med ytterligare en placering av samma valör.  
+
+Striden om segern stod emellertid mellan Christopher Kelly och Grigori. Christopher, som debuterade i så här stora sammanhang, visade inga tecken på blyghet utan roffade glatt åt sig seger efter seger. När samtliga matcher var klara visade det sig att Grigori och Christopher hade samlat på sig lika antal segrar, endast en omfäktnining kunde separera de båda. Väl i omfäktningen gick Grigori inte att rubba. Efter en 5-3 seger var Grigoris första topplacering i KM denna säsong ett faktum.  
+
+Här har ni den fullständiga resultatlistan från deltävling 2:  
+
+```{r results_table, echo=FALSE}
+# Import result dataset from first competition
+comp2 <- read_excel(here("assets","data", "Result_no2.xlsx"))
+View(comp2)
+
+## Calculate points per competition
+
+# Add new variable "points"
+tot <- comp2 %>% mutate(Points = case_when(
+  Place == 1 ~ 25,
+  Place == 2 ~ 22,
+  Place == 3 ~ 19,
+  Place == 4 ~ 17,
+  Place == 5 ~ 15,
+  Place == 6 ~ 13,
+  Place == 7 ~ 12,
+  Place == 8 ~ 11,
+  Place == 9 ~ 10,
+  Place == 10 ~ 9,
+  Place == 11 ~ 8,
+  Place == 12 ~ 7,
+  Place == 13 ~ 6,
+  Place == 14 ~ 5,
+  Place == 15 ~ 4,
+  Place == 16 ~ 3,
+  Place == 17 ~ 2,
+  TRUE ~ 1
+))
+
+
+# Prepare data for the result table
+df <- tot %>% 
+  select(-CompNo) %>% 
+  rename(Namn = Name, Placering = Place, Poäng = Points)
+
+# Create tabel output using kableExtra package
+kable(df) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+```
+
