@@ -15,17 +15,20 @@ library(kableExtra)
 library(readxl)
 ```
 
-Här är den aktuella poängställningen efter den första av fem deltävlingar:
+Här är den aktuella poängställningen efter **de första 2** av de totalt 5 deltävlingarna:
 
 ```{r data_prep, include=FALSE}
-# Import result dataset from first competition
-comp1 <- read_excel(here("assets","data", "Result_no1.xlsx"))
-View(comp1)
+# Create file path
+files <- list.files(path = here("assets", "data"), pattern = "Result*", full.names = T)
+
+# Import files into dataframe
+res <- map_dfr(files, read_xlsx)
+View(res)
 
 ## Calculate points per competition
 
-# Add new variable "points"
-tot <- comp1 %>% mutate(Points = case_when(
+# Add new variable "Points"
+tot <- res %>% mutate(Points = case_when(
   Place == 1 ~ 25,
   Place == 2 ~ 22,
   Place == 3 ~ 19,
@@ -46,15 +49,46 @@ tot <- comp1 %>% mutate(Points = case_when(
   TRUE ~ 1
 ))
 View(tot)
+
+##  Change format for output - create "pivot table" with points per competition
+piv_comp <- tot %>% 
+  select(Name, CompNo, Points) %>% 
+  pivot_wider(names_from = CompNo, values_from = Points )
+View(piv_comp)
+
+## Calculate grand total points for all competitions (1-2)
+grand_tot_1to2 <- tot %>% group_by(Name) %>%
+  summarise(sum_points = sum(Points))
+View(grand_tot_1to2)
+
+# Create new piv df with totals column
+res_1to2 <- piv_comp %>%
+  full_join(grand_tot_1to2, by = "Name") %>% 
+  arrange(desc(sum_points))
+# View(res_1to2)
+
+# Add ranking
+res_1to2 <- res_1to2 %>% mutate(rank = dense_rank(desc(sum_points)))
+
+res_1to2 <- res_1to2 %>% relocate(rank, .before = Name)
+
+
+# Rename columns for final table
+df <- res_1to2 %>% rename("#" = "rank", "Namn" = "Name", "Summa Poäng" = "sum_points")
+
 ```
 
+
+
 ```{r result_table, echo=FALSE}
-result1 <- tot %>% 
-  select(Name, Points) %>% 
-  rename(Namn = Name, Poäng = Points)
+
+# Cod from the first competition
+# result1 <- tot %>% 
+#   select(Name, Points) %>% 
+#   rename(Namn = Name, Poäng = Points)
 
 # Create tabel output using kableExtra package
-kable(result1) %>%
+kable(df) %>%
   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
   
 ```
