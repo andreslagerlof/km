@@ -33,12 +33,32 @@
   </url>
   
   <url>
-    <loc>/tag/2/</loc>
-    <lastmod>2020-10-07T19:04:31+02:00</lastmod>
+    <loc>/tag/2020/</loc>
+    <lastmod>2020-10-12T22:00:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/2020/</loc>
+    <loc>/tag/datum/</loc>
+    <lastmod>2020-10-12T22:00:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/nya-datum-2020/</loc>
+    <lastmod>2020-10-12T22:00:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-10-12T22:00:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-10-12T22:00:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/2/</loc>
     <lastmod>2020-10-07T19:04:31+02:00</lastmod>
   </url>
   
@@ -58,17 +78,7 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2020-10-07T19:04:31+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/resultat/</loc>
-    <lastmod>2020-10-07T19:04:31+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-10-07T19:04:31+02:00</lastmod>
   </url>
   
