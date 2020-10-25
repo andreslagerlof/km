@@ -15,7 +15,7 @@ library(kableExtra)
 library(readxl)
 ```
 
-Här är den aktuella poängställningen efter **de första 2** av de totalt 5 deltävlingarna:
+Här är den aktuella poängställningen efter **de första 3** av de totalt 5 deltävlingarna:
 
 ```{r data_prep, include=FALSE}
 # Create file path
@@ -57,24 +57,24 @@ piv_comp <- tot %>%
 View(piv_comp)
 
 ## Calculate grand total points for all competitions (1-2)
-grand_tot_1to2 <- tot %>% group_by(Name) %>%
+grand_tot_1to3 <- tot %>% group_by(Name) %>%
   summarise(sum_points = sum(Points))
-View(grand_tot_1to2)
+View(grand_tot_1to3)
 
 # Create new piv df with totals column
-res_1to2 <- piv_comp %>%
-  full_join(grand_tot_1to2, by = "Name") %>% 
+res_1to3 <- piv_comp %>%
+  full_join(grand_tot_1to3, by = "Name") %>% 
   arrange(desc(sum_points))
 # View(res_1to2)
 
 # Add ranking
-res_1to2 <- res_1to2 %>% mutate(rank = min_rank(desc(sum_points)))
+res_1to3 <- res_1to3 %>% mutate(rank = min_rank(desc(sum_points)))
 
-res_1to2 <- res_1to2 %>% relocate(rank, .before = Name)
+res_1to3 <- res_1to3 %>% relocate(rank, .before = Name)
 
 
 # Rename columns for final table
-df <- res_1to2 %>% rename("#" = "rank", "Namn" = "Name", "Summa Poäng" = "sum_points")
+df <- res_1to3 %>% rename("#" = "rank", "Namn" = "Name", "Summa Poäng" = "sum_points")
 
 ```
 

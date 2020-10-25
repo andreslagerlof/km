@@ -1,0 +1,87 @@
+---
+title: Grigori igen...
+author: 'Andrés Gomez'
+date: '2020-10-23'
+slug: Grigori igen...
+categories: []
+tags:
+  - '2020'
+  - deltävling
+  - '3'
+  - resultat
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-10-23T16:57:45+02:00'
+featured: no
+image:
+  placement: 3
+  caption: 'Dom glada omfäktarna, från vänster: Janne, Karsten, Grigori, Tor, CH'
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+```{r load_packages, include=FALSE}
+library(tidyverse)
+library(kableExtra)
+library(here)
+library(readxl)
+
+# To place a post image: https://babichmorrowc.github.io/post/adding-featured-images-to-posts/
+```
+
+Torsdagen var en stor dag inom fäktvärlden: KMs deltävling nr. 3!
+
+Som vanligt fick deltagarna utstå en plågsam uppläsning av förhållningsregler från tävlingsledningens utsände (när ska detta sluta?!?). Men de avslutande orden "hoppas att alla vinner!" hörsammades med råge.
+
+Efter ungefär 1,5 timmars fäktning var inte mindre än 5 fäktare på en delad 1:a plats och tvingades därför göra upp i en rafflande omfäktning. Den som läst igenom spionrapporten var naturligtvis väl förberedd på namnen på dessa fem fäktare, i bokstavsordning: CH, Grigori, Janne, Karsten och Tor. 
+
+Alla dessa 5 finalister hade samlat ihop 14 segrar av 17 möjliga. I Karstens fall var samtliga 3 förluster med uddastötar. Publiken förberedde sig därför på att se Karsten beträda tronen. Detta hade troligen också skett om inte Grigori hade lagt in en ny växel i omfäktningen, som tog honom förbi sina motståndare till ytterligare en seger. Grattis Grigori!
+
+Bakom Grigori tog slutligen Karsten en välförtjänt 2a plats, strax före Tor och efter honom kom CH och Janne i nämnd ordning.
+
+Andra topprestationer som måste nämnas är Joakims insats som ledde till en fenomenal 7e placering, en hårsmån från 6e platsen.
+
+Slutligen kunde vi konstatera att pressen på våra vänner från DIF denna gång blev lite för stor varför de valde att stanna hemma och träna. Vi får förmoda att det är en förberedelse inför en storstilad återkomst på deltävling 4 den 5 november.**Träna hårt så ses vi då!**
+
+```{r results_table, echo=FALSE}
+# Import result dataset from first competition
+comp3 <- read_excel(here("assets","data", "Result_no3.xlsx"))
+View(comp3)
+
+## Calculate points per competition
+
+# Add new variable "points"
+tot <- comp3 %>% mutate(Points = case_when(
+  Place == 1 ~ 25,
+  Place == 2 ~ 22,
+  Place == 3 ~ 19,
+  Place == 4 ~ 17,
+  Place == 5 ~ 15,
+  Place == 6 ~ 13,
+  Place == 7 ~ 12,
+  Place == 8 ~ 11,
+  Place == 9 ~ 10,
+  Place == 10 ~ 9,
+  Place == 11 ~ 8,
+  Place == 12 ~ 7,
+  Place == 13 ~ 6,
+  Place == 14 ~ 5,
+  Place == 15 ~ 4,
+  Place == 16 ~ 3,
+  Place == 17 ~ 2,
+  TRUE ~ 1
+))
+
+
+# Prepare data for the result table
+df <- tot %>% 
+  select(-CompNo) %>% 
+  rename(Namn = Name, Placering = Place, Poäng = Points)
+
+# Create tabel output using kableExtra package
+kable(df) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+```
