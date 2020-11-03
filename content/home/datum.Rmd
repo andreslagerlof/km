@@ -20,9 +20,9 @@ library(gt)
 
 - [x] ~~**Deltävling 3 - torsdagen 22 oktober** Upprop kl 19:00 start kl 19:15~~
 
-- [x] **Deltävling 4 - torsdagen 5 november** Upprop kl 19:00 start kl 19:15
+- [x] **Deltävling 4 - uppskjuten** 
 
-- [ ] **Deltävling 5 - torsdagen 19 november** Upprop kl 19:00 start kl 19:15
+- [ ] **Deltävling 5 - uppskjuten** 
 
 {{% alert warning %}}
 OBS! Samtliga deltävlingar börjar kl. 19:15, med upprop kl. 19:00. **Om ni kommer för sent får ni inte delta**, se därför till att komma i god tid. Se också till att er utrustning är i toppskick. En värja räcker inte, **se till att ha minst en extravärja.**

@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
-title = "KM 2020"
+title = "KM 2020 tills vidare inställd"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
 # hero_media = "fff.jpg"
@@ -37,10 +37,10 @@ title = "KM 2020"
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
-  url = "#datum"
-  label = "Lägg in tävlingsdatumen i din kalender nu!"
-  icon_pack = "fas"
-  icon = "calendar-check"
+#  url = "#datum"
+#  label = "Lägg in tävlingsdatumen i din kalender nu!"
+#  icon_pack = "fas"
+#  icon = "calendar-check"
   
 [cta_alt]
 #  url = "https://sourcethemes.com/academic/"
@@ -51,7 +51,7 @@ title = "KM 2020"
 #   label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates"   data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
-**OBS! Datumen får de 2 sista deltävlingarna har ändrats! Nu är det den 5:e och den 19 november som gäller.**
+**OBS! De 2 sista deltävlingarna har ställts in! Vi återkommer så snart vi får grönt ljus att fortsätta.**
 
 
 
